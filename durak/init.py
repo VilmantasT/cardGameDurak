@@ -1,8 +1,8 @@
 import random
-import data
-import cardClass
-import classDeck
-import functions
+from data import *
+from cardClass import *
+from classDeck import *
+from functions import whoStart
 
 
 deck = Deck()
@@ -12,7 +12,7 @@ player = deck.giveHand()
 kozer = deck.takeCard()
 gameEnded = False
 usedCards = []
-start = whoStart(player, computer)
+start = whoStart(player, computer, kozer)
 
 while not gameEnded:
 
